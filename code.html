@@ -22,107 +22,179 @@
 	  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
   </head>
   
-  <body>
-    
-    <div class="container">
+  <body>    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <span class="navbar-brand text-light" >Oinam Romesh Meitei</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+      </button>
       
-      
-      <nav class="navbar navbar-expand-md navbar-light bg-dark">
-	<span class="navbar-brand text-light" >Oinam Romesh Meitei</span>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-	
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav ml-auto">
-
-	    <li class="nav-item active">
-              <a class="nav-link text-light" href="index.html">About <span class="sr-only">(current)</span></a>
-	    </li>
-	    
-	    <li class="nav-item active">
-              <a class="nav-link text-light" href="code.html">Codes <span class="sr-only">(current)</span></a>
-	    </li>
-	    <li class="nav-item active">
-              <a class="nav-link text-light" href="resume.html">Resume <span class="sr-only">(current)</span></a>
-	    </li>
-	    
-	    <li class="nav-item active">
-              <a class="nav-link text-light" href="publication.html">Publications <span class="sr-only">(current)</span></a>
-	    </li>
-	    <li class="nav-item active">
-              <a class="nav-link text-light" href="talks.html">Talks <span class="sr-only">(current)</span></a>
-	    </li>
-	</div>
-      </nav>	
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>   
-
-      <div class="about-style">
-	    <h1 style="margin-top:3%;margin-left:3%;margin-bottom:2%;font-size:40px;
-		       font-family:Helvetica" align="center"><b>Open-Source Projects</b></h1>
-
-	    <div class="grid_wrapper">
-	      
-	      <a href="https://github.com/oimeitei/quemb" style="text-decoration:none;color:black;">
-		<div class = "glass_test">		
-		  <b style="font-size:30px; font-family:Helvetica; line-height:2.0">QuEmb </b>
-		  <p align="justify">
-		    At MIT, I spearheaded the development of QuEmb, an advanced Python framework designed to implement
-		    quantum embedding methods for simulating molecules and solids. In this project, I    
-		    designed algorithms in imple- menting various numerical techniques and optimized performance.
-		    The implementation was modularized to streamline each numerical steps in the simulations.
-		  </p>
-		  <button type="button" class="btn btn-dark">Python</button>
-		</div>
-	      </a>		
-		
-	      <a href="https://github.com/oimeitei/ctrlq" style="text-decoration:none;color:black;">
-		<div class = "glass_test">		
-		  <b style="font-size:30px; font-family:Helvetica; line-height:2.0">CtrlQ </b>
-		  <p align="justify">
-		    CtrlQ is a quantum computing toolkit that I independently developed at Virginia
-		    Tech. Written in hybrid Python C++, it simulates a device-level quantum state
-		    preparation on Transmon qubit devices using analog control pulses. It implements
-		    various numerical techniques and optimization algorithms. The codebase is
-		    highly modular and optimized for performance.
-		  </p>
-		  <button type="button" class="btn btn-dark">Python</button>
-		  <button type="button" class="btn btn-dark">C++</button>
-		</div>
-	      </a>	      
-	      
-	      <a href="https://github.com/oimeitei/fragpy" style="text-decoration:none;color:black;">
-		<div class = "glass_test">		
-		  <b style="font-size:30px; font-family:Helvetica; line-height:2.0">Fragpy </b>
-		  <p align="justify">
-		    Fragpy is a molecular structure optimization tool that I developed during my
-		    graduate school. In this project, I implemented numerical optimization techniques
-		    to miminze molecular geometries. I also developed and implemented a multi-node
-		    parallelization approach to distribute computation by leveraging Python's
-		    multiprocessing and an automated interactive control module for node communication.
-		  </p>
-		  <button type="button" class="btn btn-dark">Python</button>
-		</div>
-	      </a>
-	      
-	      <a href="https://github.com/oimeitei/molepy" style="text-decoration:none;color:black;">
-		<div class = "glass_test">		
-		  <b style="font-size:30px; font-family:Helvetica; line-height:2.0">Molepy </b>
-		  <p align="justify">
-		    During my graduate studies, I independently developed Molepy, an ab initio quantum
-		    chemistry program. The program implements highly computationally intensive
-		    numerical techniques to compute integrals for evaluating electron-electron interactions in
-		    quantum chemistry. The codebase is written in hybrid Python and C++, with performance
-		    critical modules implemented in C++.
-		  </p>
-		  <button type="button" class="btn btn-dark">Python</button>
-		  <button type="button" class="btn btn-dark">C++</button>
-		</div>
-	      </a>
-	    </div>
-	    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav ml-auto">
+	  
+	  <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html">About <span class="sr-only">(current)</span></a>
+	  </li>
+	  
+	  <li class="nav-item active">
+            <a class="nav-link text-light" href="code.html">Codes <span class="sr-only">(current)</span></a>
+	  </li>
+	  <li class="nav-item active">
+            <a class="nav-link text-light" href="resume.html">Resume <span class="sr-only">(current)</span></a>
+	  </li>
+	  
+	  <li class="nav-item active">
+            <a class="nav-link text-light" href="publication.html">Publications <span class="sr-only">(current)</span></a>
+	  </li>
+	  <li class="nav-item active">
+            <a class="nav-link text-light" href="talks.html">Talks <span class="sr-only">(current)</span></a>
+	  </li>
       </div>
+    </nav>	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>   
+    
+    
+    <h1 style="margin-top:3%;margin-left:3%;margin-bottom:3%;font-size:40px;
+	       font-family:Helvetica" align="center"><b>Open-Source Projects</b>
+    </h1>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="grid_wrapper">	  
+      <!-- quMeas -->
+      <div class = "glass_test">
+	<p align="center">
+	  <b style="font-size:30px; font-family:Helvetica; line-height:1.5">quMeas </b>
+	</p>
+	<p align="justify">
+	  quMeas is a high-performance, multi-threaded, quantum computing library in <b>hybrid Python C++</b> for
+	  computing expectation values of Pauli strings. Combining randomized measurement with cumulant
+	  expansion, it provides a powerful toolset for quantum measurment. quMeas employs a layered appraoch
+	  to parallelization that maximizes CPU utilization, allowing it to scale with high efficiencies.
+	</p>
+	<div class="button-container">
+	  <a href="https://github.com/oimeitei/qumeas">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+	      </svg> View Repo
+	    </button>
+	  </a>
+	  <a href="https://qumeas.readthedocs.io/en/stable/">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+		<path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/></svg> Read Docs
+	    </button>
+	  </a>
+	</div>
+      </div>
+      
+      <!-- QuEmb -->
+      <div class = "glass_test">
+	<p align="center">
+	  <b style="font-size:30px; font-family:Helvetica; line-height:1.5">QuEmb </b>
+	</p>
+	<p align="justify">
+	  At MIT, I spearheaded the development of QuEmb, an advanced <b>Python framework</b> designed to implement
+	  quantum embedding methods for simulating molecules and solids. In this project, I    
+	  designed algorithms in imple- menting various numerical techniques and optimized performance.
+	  The implementation was modularized to streamline each numerical steps in the simulations.
+	</p>
+	<div class="button-container">
+	  <a href="https://github.com/oimeitei/quemb">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+	      </svg> View Repo
+	    </button>
+	  </a>
+	  <a href="https://quemb.readthedocs.io/en/latest/">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+		<path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
+	      </svg> Read Docs
+	    </button>
+	  </a>   
+	</div>
+      </div>
+            
+      <!-- CtrlQ -->
+      <div class = "glass_test">
+	<p align="center">
+	  <b style="font-size:30px; font-family:Helvetica; line-height:1.5">CtrlQ </b>
+	</p>
+	<p align="justify">
+	  CtrlQ is a quantum computing toolkit that I independently developed at Virginia
+	  Tech. Written in <b>hybrid Python C++</b>, it simulates a device-level quantum state
+	  preparation on Transmon qubit devices using analog control pulses. It implements
+	  various numerical techniques and optimization algorithms. The codebase is
+	  highly modular and optimized for performance.
+	</p>
+	<div class="button-container">
+	  <a href="https://github.com/oimeitei/ctrlq">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+	      </svg> View Repo
+	    </button>
+	  </a>
+	  <a href="https://ctrlq.readthedocs.io/en/latest/">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+		<path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
+	      </svg> Read Docs
+	    </button>
+	  </a>
+	</div>
+      </div>
+            
+      <!-- Fragpy -->
+      <div class = "glass_test">		
+	<p align="center">
+	  <b style="font-size:30px; font-family:Helvetica; line-height:1.5">Fragpy </b>
+	</p>
+	<p align="justify">
+	  Fragpy is a <b>Python</b> tool that I developed during my
+	  graduate school for molecular geometry optimization. It implemented numerical optimization techniques
+	  to miminze molecular geometries. I also developed and implemented a multi-node
+	  parallelization approach to distribute computation by leveraging Python's
+	  multiprocessing and an automated interactive control module for node communication.
+	</p>
+	<div class="button-container">
+	  <a href="https://github.com/oimeitei/fragpy">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+	      </svg> View Repo
+	    </button>
+	  </a>
+	</div>
+      </div>
+
+      <!-- Molepy -->
+      <div class = "glass_test">		
+	<b style="font-size:30px; font-family:Helvetica; line-height:1.5">Molepy </b>
+	<p align="justify">
+	  During my graduate studies, I independently developed Molepy, an ab initio quantum
+	  chemistry program. The program implements highly computationally intensive
+	  numerical techniques to compute integrals for evaluating electron-electron interactions in
+	  quantum chemistry. The codebase is written in <b>hybrid Python and C++</b>, with performance
+	  critical modules implemented in C++.
+	</p>
+	<div class="button-container">
+	  <a href="https://github.com/oimeitei/molepy">
+	    <button type="button" class="btn btn-dark btn-sm">
+	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+	      </svg> View Repo
+	    </button>
+	  </a>
+	</div>
+      </div>
+      
     </div>
     <div class="site-footer">
       &copy 2024 Oinam Romesh Meitei. All rights reserved.

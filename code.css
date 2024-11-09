@@ -1,4 +1,5 @@
 
+
 .glass_test{
     background: rgba(248,249,250,0.0);/*rgba( 147, 147, 147, 0.1 );*/
     box-shadow: 0 0px 5px 0 rgba(108, 117, 125,1.0); /*rgba( 31, 38, 135, 0.37 );*/
@@ -6,50 +7,118 @@
     -webkit-backdrop-filter: blur( 0px );
     border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding:2%;
-    margin:20px;
-    width: 390px;
-    height: 370px;
-    display: inline-block;
+    flex: 1 1 3000px;
+    max-width: 380px;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*space-between;*/
+    align-item: center;
+    width: 100%;
+    height: auto;
+    padding: 1.8%;
+    transition: transform 0.3s ease;   
+}
+
+.glass_test p {
+    padding: 0;
+    margin-bottom: 1.8%;
+}
+
+.glass_test:hover {
+    transform: translateY(-5px);
+}
+
+.glass_test button {
+    margin: 5px;
+}
+
+
+.button-container {
+    display: flex;
+    align: left; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: auto; /*10px;*/
+    margin-left: -5px;
+    margin-bottom: -8px;
+    padding: 0px;
 }
 
 .grid_wrapper {
-    text-align: center;
-    /*max-width: 900px;*/
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 30px; 
     width: 100%;
     margin: 0 auto;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
+.social a{
+    color:black;
+    margin:3%
+}
 
 a {
     color: #FFFFFF;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .btn {
     margin-bottom:4%;
     margin-left:2%;
-    float:left
+    /*float:left*/
 }
 
-
-.about-style {
-    margin-top:5%;
-    margin-bottom:2%;
-    margin-left:1%;
-    margin-right:1%;
-    padding-bottom:10%
-}
-
-body {
-  min-height: 100vh;
-  margin: 0;
-  position: relative;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+      /*margin: 0;		
+      position: relative;*/	
 }
 .site-footer {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
-    height: 5px;
+    height: 20px;
     margin-left:3%
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+    .grid_wrapper{
+	gap: 15px;
+	padding: 5%;
+    }
+    .glass_test{
+	flex: 1 1 100%;
+	margin: 10px 0;
+	padding: 2%;
+	width: 100%;
+	max-width: 80%;
+    }
+}
+
+/* mobile phones */
+@media screen and (max-width: 480px) {
+    .grid_wrapper {
+        gap: 15px; 
+	padding: 5%;
+    }
+    .glass_test {
+	flex: 1 1 100%;
+	margin: 10px 0;
+        padding: 2%;
+	width: 100%;
+	max-width: 80%;
+    }
 }

@@ -8,15 +8,6 @@
     
 }
 
-.about-des-col {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about-des-col span {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 .about-style {
     margin-top:5%;
@@ -32,10 +23,6 @@
 .col { float: left }
 .col-right { float: right }
 
-.column {
-    float:left;
-    width:33.33%;
-}
 
 
 body {
@@ -49,4 +36,16 @@ body {
     width: 100%;
     height: 5px;
     margin-left:3%
+}
+
+@media screen and (max-width: 768px) {
+    .about-des {
+	margin: 1% 1%;
+	padding: 0;
+    }
+    .about-des ul {
+	margin-left: 0;
+	padding-left: 5%;
+	padding-right: 2%
+    }
 }
