@@ -1,3 +1,6 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+} 
 
 .image-cropper {
     overflow: hidden;
@@ -80,3 +83,4 @@ body {
       margin-right:5%;
   }
 }
+
