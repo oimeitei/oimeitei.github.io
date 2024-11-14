@@ -13,6 +13,7 @@
 
 .pub {
     font-family:Helvetica;
+    margin-left: 5%;
 }
 
 .pub a {
@@ -47,4 +48,13 @@ body {
     width: 100%;
     height: 5px;
     margin-left:3%
+}
+
+
+@media screen and (max-width: 768px) {
+    .pub {
+	padding: 0%;
+	margin-left: 1.5%;
+	
+    }
 }
