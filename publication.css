@@ -58,3 +58,12 @@ body {
 	
     }
 }
+
+.btn {
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; 
+}
+
+.btn:hover {
+  background-color: #555; 
+  transform: scale(1.1);
+}

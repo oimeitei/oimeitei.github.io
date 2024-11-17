@@ -1,6 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+      /*margin: 0;		
+      position: relative;*/	
+}
 
+.container {
+    padding-left: 0;
+}
 
 .glass_test{
+    position: relative;
     background: rgba(248,249,250,0.0);/*rgba( 147, 147, 147, 0.1 );*/
     box-shadow: 0 0px 5px 0 rgba(108, 117, 125,1.0); /*rgba( 31, 38, 135, 0.37 );*/
     backdrop-filter: blur( 0px );
@@ -23,7 +35,7 @@
 
 .glass_test p {
     padding: 0;
-    margin-bottom: 1.8%;
+    margin-bottom: 5%;
 }
 
 .glass_test:hover {
@@ -44,13 +56,15 @@
     margin-left: -5px;
     margin-bottom: -8px;
     padding: 0px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; 
+    cursor: pointer;
 }
 
 .grid_wrapper {
     display: flex;
     flex-wrap: wrap;  
     justify-content: center;
-    gap: 30px; 
+    gap: 40px; 
     width: 100%;
     margin: 0 auto;
     padding: 0%;
@@ -71,20 +85,12 @@ a {
     display: inline-block;
 }
 
-.btn {
-    margin-bottom:4%;
-    margin-left:2%;
-    /*float:left*/
+a:hover {
+  color: #FFFFFF; 
+  text-decoration: none; 
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-      /*margin: 0;		
-      position: relative;*/	
-}
+
 .site-footer {
     /*position: absolute;*/
     bottom: 0;
@@ -93,8 +99,20 @@ body{
     margin-left:3%
 }
 
+
+
+@media screen and (max-width: 1024px) {
+    .glass_test {
+	max-width: 45%;
+    }
+    .grid_wrapper {
+	gap: 15px;
+    }
+
+}
+
 /* tablets */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid_wrapper{
 	gap: 15px;
 	padding: 2%;
@@ -106,7 +124,12 @@ body{
 	width: 100%;
 	max-width: 100%;
     }
+    .glass_test p{
+	margin-bottom:2%;
+    }
 }
+
+
 
 /* mobile phones */
 @media screen and (max-width: 480px) {
@@ -121,4 +144,81 @@ body{
 	width: 100%;
 	max-width: 100%;
     }
+    .glass_test p{
+	margin-bottom:2%;
+    }
+}
+
+.tech-stack-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tech-stack {    
+    width: 35px;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+  background-color: #6a0dad; 
+  border: none;
+  color: white; 
+  border-radius: 3px; 
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  height: 28px;
+  width: auto; 
+  margin: 8px;
+  margin-top: 5%;
+  margin-bottom:0%;
+  margin-left:0%;
+  font-size: 14px;
+}
+
+.custom-button:hover {
+  background-color: #333; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  text-decoration: none;
+}
+
+.custom-button:hover .text-section {
+  color: #a05dd6;
+}
+
+.icon-section {
+  background-color: #a05dd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%; 
+  padding: 6px;
+  color: white;
+}
+
+.icon-section svg {
+  transition: transform 0.3s; 
+}
+
+.custom-button:hover .icon-section svg {
+  transform: scale(1.1); 
+}
+
+
+.text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; 
+  background-color: #333; 
+  padding: 10px;
+  color: white;
 }
